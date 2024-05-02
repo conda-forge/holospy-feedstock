@@ -1,5 +1,5 @@
 {% set name = "holospy" %}
-{% set version = "0.2" %}
+{% set version = "0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/holospy-{{ version }}.tar.gz
-  sha256: 9d90fd0ff9122601c7d9ab85cf0c0f88d8a31c99cea9b5a3e2fc0df82d103238
+  sha256: 977c46e36a7122e39ff244192ecba931e35fc6873eebd87a1a7693f4adb8698b
 
 build:
   noarch: python
@@ -24,6 +24,7 @@ requirements:
     - python >=3.8
     - hyperspy-base >=2.0
     - numpy >=1.20.0
+    - pint >=0.10
     - scipy >=1.5.0
 
 test:
