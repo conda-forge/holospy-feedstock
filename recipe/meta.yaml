@@ -1,18 +1,18 @@
 {% set name = "holospy" %}
-{% set version = "0.3" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/holospy-{{ version }}.tar.gz
-  sha256: 977c46e36a7122e39ff244192ecba931e35fc6873eebd87a1a7693f4adb8698b
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/holospy-{{ version }}.tar.gz
+  sha256: 7b5e563bc11ebcd5ef31b05fbb8fe1afa12484522596523df738fa69e10294c6
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
