@@ -23,7 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - hyperspy-base >=2.4.0
-    - lazy_loader >=0.1
+    - lazy-loader >=0.1
     - numpy >=1.20.0
     - pint >=0.10
     - scikit-image  # HyperSpy optional dependencies needed for phase unwrapping
