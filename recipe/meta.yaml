@@ -1,5 +1,5 @@
 {% set name = "holospy" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/holospy-{{ version }}.tar.gz
-  sha256: 7b5e563bc11ebcd5ef31b05fbb8fe1afa12484522596523df738fa69e10294c6
+  sha256: 416c645fe4a16b51a0101f558f29cb8ad3bedbde9551cacd74458e0b9f72fe4d
 
 build:
   noarch: python
